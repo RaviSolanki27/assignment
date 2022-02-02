@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    /* justify-content: space-around; */
+    
+    background-color: rgb(164, 233, 173);
+    padding: 0 10rem;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+}
+.nav-elements{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.data{
+    display: flex;
+    justify-content: flex-start;
+}
+.indata{
+    width: 100%;
+}

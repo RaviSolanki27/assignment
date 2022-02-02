@@ -1,0 +1,6 @@
+.string{
+    display: flex;
+}
+.left-div, .right-div {
+    width: 100%;
+}
