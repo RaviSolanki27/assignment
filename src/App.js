@@ -1,16 +1,16 @@
-import { Route, Switch } from 'react-router-dom';
-import './App.css';
-import Task1 from './components/Task1/Task1';
-import Task2 from './components/Task2/Task2';
-
+import { Route, Switch } from "react-router-dom";
+import "./App.css";
+import Assignment2 from "./components/Assignment2/Assignment2";
 function App() {
   return (
     <div className="App">
-      <Switch>
+      {/* <Switch>
         <Route exact path="/" component={Task1} />
         <Route path="/task1" component={Task1} />
         <Route path="/task2" component={Task2} />
-      </Switch>
+      </Switch> */}
+
+      <Assignment2 />
     </div>
   );
 }
