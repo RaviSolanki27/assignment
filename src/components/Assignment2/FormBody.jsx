@@ -41,69 +41,71 @@ function FormBody() {
 
   return (
     <div className="formbody">
-      <form action="" className="form">
-        <div>
-          <input
-            type="text"
-            value={first.firstname}
-            name="firstname"
-            onChange={updatedata}
-          />
-          <p>Enter your First name</p>
-        </div>
-        <div>
-          <input
-            type="text"
-            value={first.lastname}
-            name="lastname"
-            onChange={updatedata}
-          />
-          <p>Enter your Last name</p>
-        </div>
-        <div>
-          <input
-            type="text"
-            value={first.email}
-            name="email"
-            onChange={updatedata}
-          />
-          <p>Enter your Email </p>
-        </div>
-        <div>
-          <input
-            type="text"
-            value={first.education}
-            name="education"
-            onChange={updatedata}
-          />
-          <p>Enter your Education </p>
-        </div>
-        <div>
-          <input
-            type="text"
-            value={first.bio}
-            name="bio"
-            onChange={updatedata}
-          />
-          <p>Enter your Bio </p>
-        </div>
-        <div>
-          <input
-            type="date"
-            value={first.dob}
-            name="dob"
-            onChange={updatedata}
-          />
-          <p>Enter your DOB </p>
-        </div>
-        <div>
-          <button type="submit" onClick={submitdata}>
-            Submit
-          </button>
-        </div>
-      </form>
-      
-      {show && <ThankYou />}
+      {show ? (
+        <ThankYou />
+      ) : (
+        <form action="" className="form">
+          <div>
+            <input
+              type="text"
+              value={first.firstname}
+              name="firstname"
+              onChange={updatedata}
+            />
+            <p>Enter your First name</p>
+          </div>
+          <div>
+            <input
+              type="text"
+              value={first.lastname}
+              name="lastname"
+              onChange={updatedata}
+            />
+            <p>Enter your Last name</p>
+          </div>
+          <div>
+            <input
+              type="text"
+              value={first.email}
+              name="email"
+              onChange={updatedata}
+            />
+            <p>Enter your Email </p>
+          </div>
+          <div>
+            <input
+              type="text"
+              value={first.education}
+              name="education"
+              onChange={updatedata}
+            />
+            <p>Enter your Education </p>
+          </div>
+          <div>
+            <input
+              type="text"
+              value={first.bio}
+              name="bio"
+              onChange={updatedata}
+            />
+            <p>Enter your Bio </p>
+          </div>
+          <div>
+            <input
+              type="date"
+              value={first.dob}
+              name="dob"
+              onChange={updatedata}
+            />
+            <p>Enter your DOB </p>
+          </div>
+          <div>
+            <button type="submit" onClick={submitdata}>
+              Submit
+            </button>
+          </div>
+        </form>
+      )}
     </div>
   );
 }
